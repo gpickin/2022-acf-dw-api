@@ -1,0 +1,8 @@
+{
+    "name":"acf-dev-feud",
+    "web":{
+        "rewrites":{
+            "enable":true
+        }
+    }
+}

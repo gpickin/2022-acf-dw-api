@@ -1,0 +1,44 @@
+{
+    "name":"acf-dev-feud",
+    "version":"1.0.0",
+    "location":"",
+    "author":"You",
+    "slug":"acf-dev-feud",
+    "createPackageDirectory":false,
+    "type":"mvc",
+    "homepage":"https://github.com/coldbox-templates/rest-hmvc",
+    "documentation":"https://github.com/coldbox-templates/rest-hmvc",
+    "repository":{
+        "type":"git",
+        "url":"https://github.com/coldbox-templates/rest-hmvc"
+    },
+    "bugs":"https://github.com/coldbox-templates/rest-hmvc/issues",
+    "shortDescription":"A modular API RESTFul template",
+    "contributors":[],
+    "ignore":[],
+    "devDependencies":{
+        "testbox":"^4.0.0",
+        "relax":"^4.1.0",
+        "route-visualizer":"*",
+        "commandbox-dotenv":"*",
+        "commandbox-cfconfig":"*",
+        "commandbox-cfformat":"*"
+    },
+    "installPaths":{
+        "coldbox":"coldbox/",
+        "relax":"modules/relax/",
+        "testbox":"testbox/",
+        "cbSwagger":"modules/cbSwagger/",
+        "route-visualizer":"modules/route-visualizer/",
+        "mementifier":"modules/mementifier/",
+        "cbvalidation":"modules/cbvalidation/",
+        "cbsecurity":"modules/cbsecurity/"
+    },
+    "dependencies":{
+        "coldbox":"^6.0.0",
+        "cbsecurity":"^2.5.0+94",
+        "mementifier":"^2.1.0+100",
+        "cbvalidation":"^2.1.0+126"
+    },
+    "scripts":{}
+}
