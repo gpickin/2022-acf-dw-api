@@ -1,6 +1,12 @@
 {
+    "app":{
+        "cfengine":"adobe@2021.0.3+329779"
+    },
     "name":"acf-dev-feud",
     "web":{
+        "http":{
+            "port":"54006"
+        },
         "rewrites":{
             "enable":true
         }

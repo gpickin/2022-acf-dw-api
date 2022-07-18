@@ -24,6 +24,14 @@ component extends="coldbox.system.RestHandler" {
 		event.getResponse().setData( "Welcome to my ColdBox RESTFul Service" );
 	}
 
+	function onError(){}
+
+	function on404( event, rc, prc ){
+		event.getResponse()
+			.setStatusCode( 404 )
+			.setData( "#CGI.PATH_INFO# is not a valid Route" );
+	}
+
 
 	/**
 	 * A secured route that shows you your information

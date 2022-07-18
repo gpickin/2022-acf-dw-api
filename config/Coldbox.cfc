@@ -137,6 +137,9 @@
 		 * }
 		 */
 		moduleSettings = {
+			quick : {
+				defaultGrammar = "MySQLGrammar@qb"
+			},
 			/**
 			 * --------------------------------------------------------------------------
 			 * cbSwagger Settings
@@ -154,9 +157,9 @@
 				// Information about your API
 				"info"          : {
 					// A title for your API
-					"title"          : "ColdBox REST-HMVC Template",
+					"title"          : "Dev Feud API",
 					// A description of your API
-					"description"    : "This API produces amazing results and data.",
+					"description"    : "Dev Feud Quiz API",
 					// A terms of service URL for your API
 					"termsOfService" : "",
 					// The contact email address

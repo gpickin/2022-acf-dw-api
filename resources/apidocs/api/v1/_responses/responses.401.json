@@ -1,0 +1,37 @@
+{
+	"401": {
+		"description": "A 401 error for Not Authenticated",
+		"content": {
+			"application/json": {
+				"schema": {
+					"type": "object",
+					"properties": {
+						"error": {
+							"description": "Flag to indicate an error - True for this Response",
+							"type": "boolean"
+						},
+						"messages": {
+							"description": "An array of error messages.",
+							"type": "array",
+							"items": {
+								"type": "string"
+							}
+						},
+						"data": {
+							"description": "A data holder - Empty for this Response",
+							"type": "string"
+						}
+					}
+				},
+				"example": {
+					"data": "",
+					"error": true,
+					"pagination": {},
+					"messages": [
+						"You are not logged in or your session has timed out, please try again."
+					]
+				}
+			}
+		}
+	}
+}

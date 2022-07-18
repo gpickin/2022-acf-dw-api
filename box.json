@@ -19,7 +19,7 @@
     "devDependencies":{
         "testbox":"^4.0.0",
         "relax":"^4.1.0",
-        "route-visualizer":"*",
+        "route-visualizer":"^1.4.0+24",
         "commandbox-dotenv":"*",
         "commandbox-cfconfig":"*",
         "commandbox-cfformat":"*"
@@ -32,13 +32,32 @@
         "route-visualizer":"modules/route-visualizer/",
         "mementifier":"modules/mementifier/",
         "cbvalidation":"modules/cbvalidation/",
-        "cbsecurity":"modules/cbsecurity/"
+        "cbsecurity":"modules/cbsecurity/",
+        "quick":"modules/quick/",
+        "cors":"modules/cors/",
+        "cbSwaggerUI":"modules/cbSwaggerUI/"
     },
     "dependencies":{
         "coldbox":"^6.0.0",
         "cbsecurity":"^2.5.0+94",
         "mementifier":"^2.1.0+100",
-        "cbvalidation":"^2.1.0+126"
+        "cbvalidation":"^2.1.0+126",
+        "quick":"^4.2.4",
+        "cors":"^3.0.5",
+        "cbSwaggerUI":"^1.2.0"
     },
-    "scripts":{}
+    "scripts":{},
+    "cfmigrations":{
+        "migrationsDirectory":"resources/database/migrations",
+        "schema":"${DB_SCHEMA}",
+        "connectionInfo":{
+            "bundleName":"${DB_BUNDLENAME}",
+            "bundleVersion":"${DB_BUNDLEVERSION}",
+            "password":"${DB_PASSWORD}",
+            "connectionString":"${DB_CONNECTIONSTRING}",
+            "class":"${DB_CLASS}",
+            "username":"${DB_USER}"
+        },
+        "defaultGrammar":"AutoDiscover@qb"
+    }
 }

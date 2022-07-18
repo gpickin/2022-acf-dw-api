@@ -1,0 +1,34 @@
+{
+	"parameters": [
+		{
+			"name": "page",
+			"description": "The current page requested - used for pagination",
+			"in": "query",
+			"required": "false",
+			"schema": {
+				"type": "string",
+				"default": "1"
+			}
+		},
+		{
+			"name": "maxrows",
+			"description": "The max rows per page - used for pagination",
+			"in": "query",
+			"required": "false",
+			"schema": {
+				"type": "string",
+				"default": "25"
+			}
+		},
+		{
+			"name": "includeAnswers",
+			"description": "Boolean flag to determine if we should return embedded answer array inside of each question",
+			"in": "query",
+			"required": "false",
+			"schema": {
+				"type": "boolean",
+				"default": false
+			}
+		}
+	]
+}

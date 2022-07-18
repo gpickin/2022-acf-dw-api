@@ -1,0 +1,21 @@
+{
+	"description": "Needed fields to create a Question",
+	"required": true,
+	"content": {
+		"application/json": {
+			"schema": {
+				"type": "object",
+				"required": ["question"],
+				"properties": {
+					"question": {
+						"description": "Question to be added",
+						"type": "string"
+					}
+				},
+				"example": {
+					"question": "Homesite or IntellJ?"
+				}
+			}
+		}
+	}
+}
